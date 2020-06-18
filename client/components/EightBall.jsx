@@ -1,4 +1,5 @@
 import React from 'react'
+import '../../server/public/main.css';
 
 const EightBall = props => {
 
@@ -6,15 +7,9 @@ const EightBall = props => {
 
     return (
         <>
-        <h1>Say some clever things here</h1>
-        <div>
-            <img/>
-            <div>
-                <img/>
-                <div>
-                    <img/>
-                    <p class="big8">8</p>
-                </div>
+        <div class="backball">
+            <div class="center_white">
+                <h1>8</h1>
             </div>
         </div>
         </>
