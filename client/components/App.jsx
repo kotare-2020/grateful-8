@@ -1,6 +1,6 @@
 import React from "react"
 import { HashRouter as Router, Route, Link } from "react-router-dom"
-import answersData from "../../data/data"
+import getRandomAnswer from '../../server/js/getRandomAnswer'
 
 import MyForm from "./Form"
 import Fate from "./Fate"
@@ -18,12 +18,14 @@ class App extends React.Component {
   // on context click, set state to flame
 
   render() {
+    let randomAnswer = getRandomAnswer().answer
     return (
       <>
         <Router>
           <h1>Grateful 8</h1>
           <div className="container">
             <MyForm setQuestion={this.setQuestion} />
+            <h1>{randomAnswer}</h1>
 
             <Route exact path="/Fate" component={Fate} />
             <div onDragEnter={this.shootFire} >Shoot Fire animation</div>
