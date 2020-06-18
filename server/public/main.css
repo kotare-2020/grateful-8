@@ -24,3 +24,18 @@
     left: 32%;
     font-size: 200px;
 }
+
+.triangle-container{
+    width: 300px;
+    text-align:center;
+}
+
+.triangle{
+    fill: blue;
+    stroke-width: 10;
+}
+
+.content {
+    margin-left: 30px;
+    margin-top: 55px;
+}
