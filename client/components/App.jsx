@@ -5,6 +5,7 @@ import getRandomAnswer from '../../server/js/getRandomAnswer'
 
 import MyForm from "./Form"
 import Fate from "./Fate"
+import Hexgrid from "./Hexgrid"
 
 class App extends React.Component {
   state = {
@@ -20,18 +21,20 @@ class App extends React.Component {
     return (
       <>
         <Router>
-          <h1>Grateful 8</h1>
           <div className="container">
-          <MyForm setQuestion={this.setQuestion} />
-          <h1>{randomAnswer}</h1>
-            
-          <Route exact path="/Fate" component={Fate} />
+            <Hexgrid />
+            <div className="main">
+              <h1>Grateful 8</h1>
+              <MyForm setQuestion={this.setQuestion} />
+              <h1>{randomAnswer}</h1>
 
-          {/* <Route exact path="/" component={Home} /> */}
+              <Route exact path="/Fate" component={Fate} />
 
-          {/* Do we still need/want this  if not we can get rid of a lot of code */}
-          <h1>Your fate is: {this.state.question}</h1>
+              {/* <Route exact path="/" component={Home} /> */}
 
+              {/* Do we still need/want this  if not we can get rid of a lot of code */}
+              <h1>Your fate is: {this.state.question}</h1>
+            </div>
           </div>
         </Router>
       </>
