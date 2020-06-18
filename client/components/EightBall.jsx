@@ -1,19 +1,22 @@
-import React from 'react'
-import '../../server/public/main.css';
+import React from "react"
 
-const EightBall = props => {
+import getRandomAnswer from "../../server/js/getRandomAnswer"
 
-    //need a formula to change class in <p> and content
+class EightBall extends React.Component {
+  
+  render() {
+    let randomAnswer = getRandomAnswer().answer
 
     return (
-        <>
-        <div class="backball">
-            <div class="center_white">
-                <h1>8</h1>
-            </div>
+      <>
+        <div className="backball">
+          <div className="center_white">
+            <h1>{randomAnswer}</h1>
+          </div>
         </div>
-        </>
+      </>
     )
+  }
 }
 
 export default EightBall
