@@ -1,33 +1,26 @@
-/*Draw ball using div*/
-
 .backball {
-    position: absolute;
+    position: relative;
+    border-radius: 50%;
     width: 700px;
     height: 700px;
-    background: #333333;
-    box-shadow: 0px 4px 4px rgba(0,0,0,0.25);
-}
-
-.backball_shadow {
-    position: absolute;
-    width: 700px;
-    height: 700px;
-    background: #4f4f4f;
-    mix-blend-mode: overlay;
-    box-shadow: 0px 4px 4px rgba(0,0,0,0.25);
+    background-image: linear-gradient(to right bottom, #000000, #0c0c0c, #151515, #1c1b1b, #232222, #2f2e2e, #3d3b3b, #4a4848, #625f5f, #7b7878, #959191, #b0abab);
+    box-shadow: 5px 5px rgba(101, 98, 98, 0.25);
+    margin: auto;
 }
 
 .center_white {
-    position: absolute;
-    width: 285px;
-    height: 286px;
+    position: relative;
+    top: 30%; 
+    left:30%;
+    width: 40%;
+    height: 40%;
+    border-radius: 50%;
     background: #e0e0e0;
 }
 
-.center_eight {
-    position: absolute;
-    width: 160px;
-    height: 280px;
-    font-size: 290px;
-    line-height: 335px
+.center_white h1{
+    position: relative;
+    top: 10%;
+    left: 32%;
+    font-size: 200px;
 }
