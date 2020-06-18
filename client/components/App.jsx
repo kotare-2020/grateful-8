@@ -27,11 +27,9 @@ class App extends React.Component {
 
             <Route exact path="/" component={Home} />
             <Route path="/Fate" component={EightBall} />
-          
-            {/* static link before submit hit */}
+        
             {/* <div onDragEnter={this.shootFire} >Shoot Fire animation</div> */}
 
-            {/* Do we still need/want this  if not we can get rid of a lot of code */}
             {/* <h1>Your fate is: {this.state.question}</h1> */}
           </div>
         </Router>
