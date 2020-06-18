@@ -1,3 +1,7 @@
+body {
+    position: relative
+}
+
 .backball {
     position: relative;
     border-radius: 50%;
@@ -24,6 +28,10 @@
     left: 32%;
     font-size: 200px;
 }
+
+.hexgrid {
+    position: absolute;
+    z-index: -1;
 
 .triangle-container{
     width: 300px;
