@@ -1,11 +1,7 @@
 import React from "react"
 
-import getRandomAnswer from "../../server/js/getRandomAnswer"
-
-class EightBall extends React.Component {
+class Home extends React.Component {
   render() {
-    let randomAnswer = getRandomAnswer().answer
-
     return (
       <>
         <div className="backball">
@@ -14,11 +10,11 @@ class EightBall extends React.Component {
               <polygon points="10,10 110,210 210,10" class="triangle" />
               <text
                 x="50%"
-                y="20%"
+                y="50%"
                 dominant-baseline="middle"
                 text-anchor="middle"
               >
-                {randomAnswer}
+                8
               </text>
             </svg>
           </div>
@@ -28,4 +24,4 @@ class EightBall extends React.Component {
   }
 }
 
-export default EightBall
+export default Home

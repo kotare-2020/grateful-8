@@ -6,25 +6,24 @@ class MyForm extends React.Component {
     question: "",
   }
 
-  handleSubmit = (event) => {
-    event.preventDefault()
+  handleSubmit = (e) => {
+    e.preventDefault()
 
     console.log("submit", this.state)
 
     this.props.setQuestion(this.state.question)
   }
 
-  handleChange = (event) => {
-    const question = event.target.name
+  handleChange = (e) => {
+    const name = e.target.name
+    const question = e.target.value
 
-    console.log("change!", event.target.question)
+    console.log("change!", e.target.question)
 
     this.setState({
-      [question]: event.target.value,
+      [name]: question,
     })
   }
-  // get it so that when they hit submit it responds with random answer
-  // random answer generator will come later
 
   render() {
     return (
@@ -34,15 +33,8 @@ class MyForm extends React.Component {
           <input type="text" name="question" onChange={this.handleChange} />
         </label>
 
-        {/* Best to have a button here.. but how to get it not to be underlined as link? */}
-        {/* Is there a way to sumbit and get the data from question? Do we need it? */}
-        {/* Just to remind me removinh type=submit still gets us the answer just not the Q data we could proably get it from a nested function that runs if we do want */}
-        <button>
-          <Link type="submit" to={`/Fate`}>
-            Decide my fate
-          </Link>
-        </button>
-        {/* <input type="submit" value={<Link to={`/Fate`}>Decide my fate</Link>} /> */}
+        <Link to={`/Fate`}><button >Decide my Fate</button></Link>
+        
       </form>
     )
   }
