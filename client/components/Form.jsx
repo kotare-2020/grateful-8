@@ -15,12 +15,13 @@ class MyForm extends React.Component {
   }
 
   handleChange = (event) => {
-    const question = event.target.name
+    const name = event.target.name
+    const question = event.target.value
 
     console.log("change!", event.target.question)
 
     this.setState({
-      [question]: event.target.value,
+      [name]: question,
     })
   }
   // get it so that when they hit submit it responds with random answer
