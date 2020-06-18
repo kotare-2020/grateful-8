@@ -10,13 +10,13 @@ class EightBall extends React.Component {
       <>
         <div className="backball">
           <div className="center_white">
-            <svg height="220" width="220" class="content">
-              <polygon points="10,10 110,210 210,10" class="triangle" />
+            <svg height="220" width="220" className="content">
+              <polygon points="10,10 110,210 210,10" className="triangle" />
               <text
                 x="50%"
                 y="20%"
-                dominant-baseline="middle"
-                text-anchor="middle"
+                dominantBaseline="middle"
+                textAnchor="middle"
               >
                 {randomAnswer}
               </text>
