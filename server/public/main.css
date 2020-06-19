@@ -1,5 +1,12 @@
+/* Font for ball */
+/* font-family: 'Metal Mania', cursive; */
+
+/* Font for everything else */
+/* font-family: 'Odibee Sans', cursive; */
+
 body {
-    position: relative
+    position: relative;
+    font-family: 'Odibee Sans', cursive;
 }
 
 .backball {
@@ -47,4 +54,13 @@ body {
 .content {
     margin-left: 30px;
     margin-top: 55px;
+}
+
+.formLabel {
+    color: white;
+}
+
+.formElement {
+    font-family: 'Odibee Sans', cursive;
+    font-size: 2rem
 }
