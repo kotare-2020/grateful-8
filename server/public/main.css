@@ -1,0 +1,87 @@
+/* Font for ball */
+/* font-family: 'Metal Mania', cursive; */
+
+/* Font for everything else */
+/* font-family: 'Odibee Sans', cursive; */
+
+body {
+    position: relative;
+    font-family: 'Odibee Sans', cursive;
+}
+
+.backball {
+    position: relative;
+    border-radius: 50%;
+    width: 700px;
+    height: 700px;
+    background-image: linear-gradient(to right bottom, #000000, #0c0c0c, #151515, #1c1b1b, #232222, #2f2e2e, #3d3b3b, #4a4848, #625f5f, #7b7878, #959191, #b0abab);
+    box-shadow: 5px 5px rgba(101, 98, 98, 0.25);
+    margin: auto;
+}
+
+.center_white {
+    position: relative;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    background-image: radial-gradient(circle, #090b52, #250136, #240020, #1b000f, #000000);
+}
+
+.center_black {
+    position: relative;
+    background-image: linear-gradient(to left top, #000000, #0c0c0c, #151515, #1c1b1b, #232222, #2f2e2e, #3d3b3b, #4a4848, #625f5f, #7b7878, #959191, #b0abab);
+    top: 25%; 
+    left: 26%;
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+}
+
+.center_white h1{
+    position: relative;
+    top: 10%;
+    left: 32%;
+    font-size: 200px;
+}
+
+.hexgrid {
+    position: absolute;
+    z-index: -1;
+}
+
+.triangle-container{
+    width: 300px;
+    text-align:center;
+}
+
+.triangle {
+    stroke-width: 10;
+    fill: blue;
+    position: absolute;
+}
+
+.content {
+    margin-left: 37px;
+    margin-top: 60px;
+}
+
+.text_color {
+    fill:white;
+    font-size: 20px;
+}
+
+.formLabel {
+    color: white;
+}
+
+.formElement {
+    font-family: 'Odibee Sans', cursive;
+    font-size: 2rem
+}
+
+.main {
+    text-align: center;
+    margin: 5% auto 5% auto;
+}
