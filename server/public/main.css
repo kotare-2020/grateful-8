@@ -89,8 +89,8 @@ body {
 
 .main {
     text-align: center;
-    margin: 0% auto 5% auto;
-    padding-top: 5%;
+    margin: 0% auto 3% auto;
+    padding-top: 3%;
 }
 
 .container {
@@ -285,3 +285,36 @@ body {
       margin-top: 30%;
       margin-left: 80%; } }
   
+=======
+.fade-in {
+    animation-delay: 4s;
+    animation: fadeIn ease 5s;
+    -webkit-animation: fadeIn ease 5s;
+    -moz-animation: fadeIn ease 5s;
+    -o-animation: fadeIn ease 5s;
+    -ms-animation: fadeIn ease 5s;
+    }
+    @keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }

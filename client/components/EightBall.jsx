@@ -24,7 +24,7 @@ class EightBall extends React.Component {
                   y="40%"
                   dominantBaseline="middle"
                   textAnchor="middle"
-                  className="text_color"
+                  className="text_color fade-in"
                 >
                   {randomAnswer}
                 </text>
