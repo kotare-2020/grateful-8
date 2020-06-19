@@ -29,7 +29,7 @@ class MyForm extends React.Component {
     return (
       <form onSubmit={this.handleSubmit}>
         <label className="formElement formLabel">
-          Question:
+          You know you want too:
           <input className="formElement" type="text" name="question" onChange={this.handleChange} />
         </label>
 
