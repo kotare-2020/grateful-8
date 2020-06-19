@@ -28,12 +28,12 @@ class MyForm extends React.Component {
   render() {
     return (
       <form onSubmit={this.handleSubmit}>
-        <label>
+        <label className="formElement formLabel">
           Question:
-          <input type="text" name="question" onChange={this.handleChange} />
+          <input className="formElement" type="text" name="question" onChange={this.handleChange} />
         </label>
 
-        <Link to={`/Fate`}><button >Decide my Fate</button></Link>
+        <Link to={`/Fate`}><button className="formElement">Decide my Fate</button></Link>
         
       </form>
     )
