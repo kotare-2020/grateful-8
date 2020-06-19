@@ -13,11 +13,6 @@ class App extends React.Component {
 
   setQuestion = (question) => this.setState({ question: question })
 
-  shootFire = () => {}
-
-  // set div that updates state to be around cursor
-  // on context click, set state to flame
-
   render() {
     return (
       <>
@@ -32,8 +27,6 @@ class App extends React.Component {
               <Route exact path="/" component={Home} />
               <Route path="/Fate" component={EightBall} />
             </div>
-            {/* <div onDragEnter={this.shootFire} >Shoot Fire animation</div> */}
-            {/* <h1>Your fate is: {this.state.question}</h1> */}
           </div>
         </Router>
       </>
@@ -43,6 +36,3 @@ class App extends React.Component {
 
 export default App
 
-{
-  /* <iframe src="https://giphy.com/embed/6wpHEQNjkd74Q" width="480" height="253" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/6wpHEQNjkd74Q">via GIPHY</a></p> */
-}
