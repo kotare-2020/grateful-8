@@ -18,7 +18,7 @@ const answers = [
   { id: 17, answer: "Without a doubt." },
   { id: 18, answer: "Yes." },
   { id: 19, answer: "Yes - definitely." },
-  { id: 20, answer: "You may rely on it." },
+  { id: 20, answer: "\u{1F330}" },
 ]
 
 export default answers

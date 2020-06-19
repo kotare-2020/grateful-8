@@ -73,6 +73,11 @@ body {
     font-size: 20px;
 }
 
+.text_color_home {
+    fill:white;
+    font-size: 160px;
+}
+
 .formLabel {
     color: white;
 }
