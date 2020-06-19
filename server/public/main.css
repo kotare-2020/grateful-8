@@ -1,5 +1,13 @@
+/* Font for ball */
+/* font-family: 'Metal Mania', cursive; */
+
+/* Font for everything else */
+/* font-family: 'Odibee Sans', cursive; */
+
 body {
-    position: relative
+    position: relative;
+    font-family: 'Odibee Sans', cursive;
+    margin:0;
 }
 
 .backball {
@@ -14,12 +22,22 @@ body {
 
 .center_white {
     position: relative;
-    top: 30%; 
-    left:30%;
-    width: 40%;
-    height: 40%;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
     border-radius: 50%;
-    background: #e0e0e0;
+    background-image: radial-gradient(circle, #090b52, #250136, #240020, #1b000f, #000000);
+}
+
+.center_black {
+    position: relative;
+    background-image: linear-gradient(to left top, #000000, #0c0c0c, #151515, #1c1b1b, #232222, #2f2e2e, #3d3b3b, #4a4848, #625f5f, #7b7878, #959191, #b0abab);
+    top: 25%; 
+    left: 26%;
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
 }
 
 .center_white h1{
@@ -39,12 +57,42 @@ body {
     text-align:center;
 }
 
-.triangle{
-    fill: blue;
+.triangle {
     stroke-width: 10;
+    fill: blue;
+    position: absolute;
 }
 
 .content {
-    margin-left: 30px;
-    margin-top: 55px;
+    margin-left: 37px;
+    margin-top: 60px;
+}
+
+.text_color {
+    fill:white;
+    font-size: 20px;
+}
+
+.text_color_home {
+    fill:white;
+    font-size: 160px;
+}
+
+.formLabel {
+    color: white;
+}
+
+.formElement {
+    font-family: 'Odibee Sans', cursive;
+    font-size: 2rem
+}
+
+.main {
+    text-align: center;
+    margin: 0% auto 5% auto;
+    padding-top: 5%;
+}
+
+.container {
+    margin:0;
 }
