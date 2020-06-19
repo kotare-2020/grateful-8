@@ -70,7 +70,7 @@ body {
 
 .text_color {
     fill:white;
-    font-size: 20px;
+    font-size: 35px;
 }
 
 .text_color_home {
@@ -89,8 +89,8 @@ body {
 
 .main {
     text-align: center;
-    margin: 0% auto 5% auto;
-    padding-top: 5%;
+    margin: 0% auto 3% auto;
+    padding-top: 3%;
 }
 
 .container {
