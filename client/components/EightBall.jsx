@@ -3,7 +3,6 @@ import React from "react"
 import getRandomAnswer from "../../server/js/getRandomAnswer"
 
 class EightBall extends React.Component {
-  
   render() {
     let randomAnswer = getRandomAnswer().answer
 
@@ -11,7 +10,17 @@ class EightBall extends React.Component {
       <>
         <div className="backball">
           <div className="center_white">
-            <h1>{randomAnswer}</h1>
+            <svg height="220" width="220" className="content">
+              <polygon points="10,10 110,210 210,10" className="triangle" />
+              <text
+                x="50%"
+                y="20%"
+                dominantBaseline="middle"
+                textAnchor="middle"
+              >
+                {randomAnswer}
+              </text>
+            </svg>
           </div>
         </div>
       </>

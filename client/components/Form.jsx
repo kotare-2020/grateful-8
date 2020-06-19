@@ -6,19 +6,19 @@ class MyForm extends React.Component {
     question: "",
   }
 
-  handleSubmit = (event) => {
-    event.preventDefault()
+  handleSubmit = (e) => {
+    e.preventDefault()
 
     console.log("submit", this.state)
 
     this.props.setQuestion(this.state.question)
   }
 
-  handleChange = (event) => {
-    const name = event.target.name
-    const question = event.target.value
+  handleChange = (e) => {
+    const name = e.target.name
+    const question = e.target.value
 
-    console.log("change!", event.target.question)
+    console.log("change!", e.target.question)
 
     this.setState({
       [name]: question,
@@ -28,12 +28,12 @@ class MyForm extends React.Component {
   render() {
     return (
       <form onSubmit={this.handleSubmit}>
-        <label>
+        <label className="formElement formLabel">
           Question:
-          <input type="text" name="question" onChange={this.handleChange} />
+          <input className="formElement" type="text" name="question" onChange={this.handleChange} />
         </label>
 
-        <Link to={`/Fate`}><button >Decide my Fate</button></Link>
+        <Link to={`/Fate`}><button className="formElement">Decide my Fate</button></Link>
         
       </form>
     )

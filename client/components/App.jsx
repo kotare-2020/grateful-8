@@ -2,6 +2,7 @@ import React from "react"
 import { HashRouter as Router, Route, Link } from "react-router-dom"
 
 import MyForm from "./Form"
+import Hexgrid from "./Hexgrid"
 import Home from './Home'
 import EightBall from "./EightBall"
 
@@ -21,17 +22,16 @@ class App extends React.Component {
     return (
       <>
         <Router>
-          <h1>Grateful 8</h1>
           <div className="container">
+            <Hexgrid />
+            <div className="main">
             <MyForm setQuestion={this.setQuestion} />
 
             <Route exact path="/" component={Home} />
             <Route path="/Fate" component={EightBall} />
-          
-            {/* static link before submit hit */}
+              
+            </div>
             {/* <div onDragEnter={this.shootFire} >Shoot Fire animation</div> */}
-
-            {/* Do we still need/want this  if not we can get rid of a lot of code */}
             {/* <h1>Your fate is: {this.state.question}</h1> */}
           </div>
         </Router>
