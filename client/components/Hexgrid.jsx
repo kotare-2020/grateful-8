@@ -2,6 +2,7 @@ import React from 'react'
 import { HexGrid, Layout, Hexagon, GridGenerator } from 'react-hexgrid';
 
 class Hexgrid extends React.Component {
+
   render() {
     const hexagons = GridGenerator.parallelogram(-15, 15, -15, 15)
 
