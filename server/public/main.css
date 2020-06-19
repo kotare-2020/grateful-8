@@ -7,6 +7,7 @@
 body {
     position: relative;
     font-family: 'Odibee Sans', cursive;
+    margin:0;
 }
 
 .backball {
@@ -83,5 +84,10 @@ body {
 
 .main {
     text-align: center;
-    margin: 5% auto 5% auto;
+    margin: 0% auto 5% auto;
+    padding-top: 5%;
+}
+
+.container {
+    margin:0;
 }
